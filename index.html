@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Privacy Policy — Nakband Welfare Foundation</title>
+  <meta name="description" content="Privacy Policy, Account Deletion Information, and Child Safety Standards for the Nakband Welfare Foundation Android application." />
+  <style>
+    :root {
+      --primary: #2563EB;
+      --primary-dark: #1E40AF;
+      --primary-soft: #EFF6FF;
+      --bg: #F8FAFC;
+      --surface: #FFFFFF;
+      --surface-variant: #F1F5F9;
+      --ink: #0F172A;
+      --slate: #334155;
+      --muted: #64748B;
+      --border: #E2E8F0;
+      --danger: #DC2626;
+      --danger-soft: #FEF2F2;
+      --success: #16A34A;
+      --success-soft: #F0FDF4;
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--ink);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body[dir="rtl"] {
+      font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Segoe UI", Tahoma, Arial, sans-serif;
+      line-height: 2;
+    }
+
+    .topbar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .topbar-inner {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-badge {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: var(--primary);
+      color: #FFFFFF;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .brand-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.25;
+    }
+
+    .brand-sub {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .nav-tabs {
+      display: inline-flex;
+      background: var(--surface-variant);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px;
+      gap: 2px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      border: none;
+      background: transparent;
+      color: var(--slate);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      transition: background 0.15s ease, color 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .tab-btn.active {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
+
+    .tab-btn.active:hover {
+      text-decoration: none;
+    }
+
+    .lang-toggle {
+      display: inline-flex;
+      background: var(--surface-variant);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px;
+      gap: 2px;
+      flex-shrink: 0;
+    }
+
+    .lang-btn {
+      border: none;
+      background: transparent;
+      color: var(--slate);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background 0.15s ease, color 0.15s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 28px 20px 56px;
+    }
+
+    .hero {
+      background: var(--primary-soft);
+      border: 1px solid rgba(37, 99, 235, 0.18);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 22px;
+    }
+
+    .hero.danger {
+      background: var(--danger-soft);
+      border-color: rgba(220, 38, 38, 0.22);
+    }
+
+    .hero.safe {
+      background: var(--success-soft);
+      border-color: rgba(22, 163, 74, 0.22);
+    }
+
+    .hero h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 6px;
+    }
+
+    .hero.danger h1 {
+      color: #991B1B;
+    }
+
+    .hero.safe h1 {
+      color: #166534;
+    }
+
+    .hero p {
+      color: var(--slate);
+      font-size: 15px;
+    }
+
+    .meta-row {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .meta-pill {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 4px 10px;
+      border-radius: 999px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--slate);
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card ul,
+    .card ol {
+      color: var(--slate);
+      font-size: 15px;
+      padding-inline-start: 22px;
+      margin-top: 6px;
+    }
+
+    .card li {
+      margin-bottom: 8px;
+    }
+
+    .card li:last-child {
+      margin-bottom: 0;
+    }
+
+    .step-box {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+      background: var(--surface-variant);
+      margin: 12px 0;
+    }
+
+    .step-box h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .step-box p {
+      font-size: 14px;
+      color: var(--slate);
+      margin-bottom: 0;
+    }
+
+    .btn-mail {
+      display: inline-block;
+      margin-top: 12px;
+      background: var(--danger);
+      color: #FFFFFF !important;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.15s ease;
+    }
+
+    .btn-mail.btn-report {
+      background: #B91C1C;
+    }
+
+    .btn-mail:hover {
+      opacity: 0.9;
+      text-decoration: none;
+    }
+
+    .notice {
+      background: var(--danger-soft);
+      border: 1px solid rgba(220, 38, 38, 0.22);
+    }
+
+    .notice h2 {
+      color: #991B1B;
+    }
+
+    .notice-safe {
+      background: var(--success-soft);
+      border: 1px solid rgba(22, 163, 74, 0.22);
+    }
+
+    .notice-safe h2 {
+      color: #166534;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    footer {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px 36px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .footer-links {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 700px) {
+      .topbar-inner {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .nav-actions {
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      .nav-tabs {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 18px;
+      }
+
+      .hero h1 {
+        font-size: 22px;
+      }
+
+      .card {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <div class="brand-badge" aria-hidden="true">NW</div>
+        <div>
+          <div class="brand-title" data-en="Nakband Welfare Foundation" data-ur="نیک بند ویلفیئر فاؤنڈیشن">Nakband Welfare Foundation</div>
+          <div class="brand-sub" data-en="Privacy Policy, Data Safety &amp; Child Protection" data-ur="پرائیویسی پالیسی، ڈیٹا تحفظ اور بچوں کا تحفظ">Privacy Policy, Data Safety &amp; Child Protection</div>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <nav class="nav-tabs" aria-label="Page navigation">
+          <button type="button" id="tab-privacy" class="tab-btn active" onclick="showPage('privacy')" data-en="Privacy Policy" data-ur="پرائیویسی پالیسی">Privacy Policy</button>
+          <button type="button" id="tab-deletion" class="tab-btn" onclick="showPage('deletion')" data-en="Account Deletion" data-ur="اکاؤنٹ حذف کریں">Account Deletion</button>
+          <button type="button" id="tab-childsafety" class="tab-btn" onclick="showPage('childsafety')" data-en="Child Safety" data-ur="بچوں کا تحفظ">Child Safety</button>
+        </nav>
+        <div class="lang-toggle" role="group" aria-label="Language switcher">
+          <button type="button" id="btn-en" class="lang-btn active" onclick="setLanguage('en')">English</button>
+          <button type="button" id="btn-ur" class="lang-btn" onclick="setLanguage('ur')">اردو</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE 1: PRIVACY POLICY -->
+    <div id="page-privacy">
+      <!-- PRIVACY - ENGLISH -->
+      <article id="privacy-en">
+        <section class="hero">
+          <h1>Privacy Policy</h1>
+          <p>How Nakband Welfare Foundation collects, uses, protects, and deletes personal data in the Nakband Welfare Foundation Android application.</p>
+          <div class="meta-row">
+            <span class="meta-pill"><strong>App:</strong> Nakband Welfare Foundation</span>
+            <span class="meta-pill"><strong>Package:</strong> com.nakband.welfare</span>
+            <span class="meta-pill"><strong>Effective Date:</strong> November 25, 2026</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>1. Who We Are</h2>
+          <p><strong>Nakband Welfare Foundation</strong> (Nakband, Seni Gumbat, Kohat, Pakistan) operates the Nakband Welfare Foundation mobile application to coordinate community welfare aid and voluntary blood donation support.</p>
+        </section>
+
+        <section class="card">
+          <h2>2. Information We Collect</h2>
+          <p>Depending on how you use the app, we may collect and store the following information:</p>
+          <ul>
+            <li><strong>Guest Access:</strong> You may browse approved blood donors and Kohat City blood-providing organizations without signing in. No account data is collected in Guest Mode.</li>
+            <li><strong>Account Information (Google Sign-In):</strong> When you sign in with Google, we collect your name, email address, and unique account identifier (Firebase UID) to manage your profile and role permissions.</li>
+            <li><strong>Voluntary Blood Donor Details (Optional):</strong> If you register or are listed as a blood donor with your consent, we store your full name, gender, age, blood group, village, district, residential address, phone number, WhatsApp availability, availability status, and optional last donation date.</li>
+            <li><strong>Welfare Beneficiary &amp; Tailoring Records (Authorized Staff Only):</strong> Authorized foundation administrators, managers, and village tailors record beneficiary details (name, family/address details, age, gender, and clothing measurements) strictly for charitable clothing distribution and welfare aid.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>3. How We Use Your Information</h2>
+          <ul>
+            <li>To display approved voluntary blood donors (name, blood group, village/district, and availability) in the community blood donor directory.</li>
+            <li>To display your phone number and WhatsApp contact link <strong>only when you explicitly opt in</strong> to share contact details.</li>
+            <li>To coordinate community welfare aid and clothing distribution through authorized foundation staff and tailors.</li>
+            <li>To maintain app security, prevent abuse, and synchronize updates with offline caching.</li>
+          </ul>
+          <p><strong>No Ads &amp; No Data Sales:</strong> We never sell, rent, or trade your personal information, and the app does not display third-party advertisements.</p>
+        </section>
+
+        <section class="card">
+          <h2>4. Data Storage, Security &amp; Third-Party Services</h2>
+          <p>Data is stored securely using <strong>Google Firebase</strong> (Firebase Authentication, Cloud Firestore, and Firebase App Check) with encryption in transit (HTTPS/TLS) and strict role-based security rules. Local on-device caching is enabled via Cloud Firestore so previously loaded records remain accessible when offline.</p>
+          <p>External links such as phone dialer, WhatsApp, or Google Maps directions open your device's native apps only when you tap them.</p>
+        </section>
+
+        <section class="card notice">
+          <h2>5. Community Directory &amp; Non-Medical Disclaimer</h2>
+          <p>The Nakband Welfare Foundation app is a voluntary community welfare and blood-donor contact directory. It does <strong>not</strong> provide medical advice, clinical diagnosis, or blood screening/testing services. Always consult licensed hospitals and certified blood banks for medical screening and blood transfusions.</p>
+        </section>
+
+        <section class="card">
+          <h2>6. Children's Privacy &amp; Safety Standards</h2>
+          <p>Account sign-in and voluntary blood donor registration are intended for adults aged <strong>18 and older</strong>. We do not knowingly allow children under 13 to create accounts. For our comprehensive child protection standards and CSAM zero-tolerance policy, please review our <a href="#childsafety" onclick="showPage('childsafety'); return false;">Child Safety Standards</a>.</p>
+        </section>
+
+        <section class="card" id="account-deletion">
+          <h2>7. Your Rights &amp; Account / Data Deletion</h2>
+          <p>You can update your donor profile, toggle phone number visibility, or permanently delete your account and associated data at any time:</p>
+          <ol>
+            <li><strong>Immediate In-App Deletion:</strong> Open the <em>Nakband Welfare Foundation</em> app → sign in → open <strong>Profile</strong> → tap <strong>Delete Account</strong> and confirm. This permanently removes your account profile, blood donor application, and public blood donor directory listing.</li>
+            <li><strong>Email Deletion Request:</strong> If you cannot access the app, email <a href="mailto:mudassirkhan9991@gmail.com?subject=Delete%20My%20Account%20-%20Nakband%20Welfare%20Foundation">mudassirkhan9991@gmail.com</a> from your registered Google email address (or include your registered name and phone number) with the subject <em>"Delete My Account"</em>. We will permanently delete your account and donor records within <strong>7 business days</strong>.</li>
+          </ol>
+          <p style="margin-top: 10px;">For detailed instructions and data retention rules, visit our dedicated <a href="#deletion" onclick="showPage('deletion'); return false;">Account Deletion Page</a>.</p>
+        </section>
+
+        <section class="card">
+          <h2>8. Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time to reflect app improvements or legal requirements. Any changes will be posted on this page with an updated effective date.</p>
+        </section>
+
+        <section class="card">
+          <h2>9. Contact Us</h2>
+          <p>If you have any questions, privacy concerns, or data removal requests, please contact:</p>
+          <p>
+            <strong>Nakband Welfare Foundation</strong><br />
+            Nakband, Seni Gumbat, Kohat, Pakistan<br />
+            Email: <a href="mailto:mudassirkhan9991@gmail.com">mudassirkhan9991@gmail.com</a>
+          </p>
+        </section>
+      </article>
+
+      <!-- PRIVACY - URDU -->
+      <article id="privacy-ur" class="hidden">
+        <section class="hero">
+          <h1>پرائیویسی پالیسی</h1>
+          <p>نیک بند ویلفیئر فاؤنڈیشن اینڈرائیڈ ایپ میں آپ کے ذاتی ڈیٹا کو کس طرح جمع، استعمال، محفوظ اور حذف کیا جاتا ہے۔</p>
+          <div class="meta-row">
+            <span class="meta-pill"><strong>ایپ:</strong> نیک بند ویلفیئر فاؤنڈیشن</span>
+            <span class="meta-pill"><strong>مؤثر تاریخ:</strong> 25 نومبر 2026</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>1. ذمہ دار فاؤنڈیشن</h2>
+          <p><strong>نیک بند ویلفیئر فاؤنڈیشن</strong> (نیک بند، سینی گمبٹ، کوہاٹ، پاکستان) کمیونٹی کی فلاح و بہبود اور رضاکارانہ خون کے عطیہ میں سہولت کے لیے یہ موبائل ایپ چلاتی ہے۔</p>
+        </section>
+
+        <section class="card">
+          <h2>2. ہم کون سی معلومات جمع کرتے ہیں</h2>
+          <ul>
+            <li><strong>گیسٹ موڈ:</strong> آپ بغیر سائن ان کیے منظور شدہ بلڈ ڈونرز اور کوہاٹ شہر کے بلڈ سینٹرز کی معلومات دیکھ سکتے ہیں۔ گیسٹ موڈ میں کوئی اکاؤنٹ ڈیٹا جمع نہیں کیا جاتا۔</li>
+            <li><strong>اکاؤنٹ معلومات (گوگل سائن ان):</strong> گوگل کے ذریعے سائن ان کرنے پر آپ کا نام، ای میل اور اکاؤنٹ آئی ڈی محفوظ کی جاتی ہے۔</li>
+            <li><strong>بلڈ ڈونر معلومات (اختیاری):</strong> رضاکارانہ بلڈ ڈونر کے طور پر رجسٹریشن پر آپ کا نام، جنس، عمر، بلڈ گروپ، گاؤں، ضلع، پتہ، فون نمبر، واٹس ایپ دستیابی اور آخری عطیہ کی تاریخ محفوظ کی جاتی ہے۔</li>
+            <li><strong>مستحقین اور پیمائش کے ریکارڈز (صرف مجاز عملہ):</strong> فلاحی امداد اور کپڑوں کی تقسیم کے لیے مجاز عملہ اور درزی مستحقین کی معلومات اور کپڑوں کی پیمائش درج کرتے ہیں۔</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>3. معلومات کا استعمال اور تحفظ</h2>
+          <ul>
+            <li>منظور شدہ بلڈ ڈونرز کی فہرست میں آپ کا نام، بلڈ گروپ، گاؤں/ضلع اور دستیابی ظاہر ہوتی ہے۔</li>
+            <li>آپ کا فون نمبر اور واٹس ایپ صرف آپ کی <strong>واضح اجازت</strong> سے دکھایا جاتا ہے۔</li>
+            <li>تمام ڈیٹا گوگل فائر بیس پر انکرپشن اور رول بیسڈ سیکیورٹی رولز کے ساتھ محفوظ ہے۔</li>
+            <li>ہم کبھی بھی آپ کا ڈیٹا فروخت نہیں کرتے اور نہ ہی ایپ میں اشتہارات چلاتے ہیں۔</li>
+          </ul>
+        </section>
+
+        <section class="card notice">
+          <h2>4. کمیونٹی ڈائریکٹری وضاحت</h2>
+          <p>یہ ایپ صرف رضاکارانہ خون کے عطیہ اور فلاحی تعاون کے لیے ہے۔ یہ کوئی طبی مشورہ، تشخیص یا کلینیکل بلڈ ٹیسٹ فراہم نہیں کرتی۔ خون کے ٹیسٹ اور انتقال کے لیے ہمیشہ مستند ہسپتال اور بلڈ بینک سے رجوع کریں۔</p>
+        </section>
+
+        <section class="card">
+          <h2>5. بچوں کی پرائیویسی اور تحفظ</h2>
+          <p>ایپ میں اکاؤنٹ بنانا اور رضاکارانہ بلڈ ڈونر رجسٹریشن صرف <strong>18 سال یا اس سے زائد</strong> عمر کے بالغ افراد کے لیے ہے۔ ہم 13 سال سے کم عمر بچوں کا ڈیٹا جان بوجھ کر جمع نہیں کرتے۔ ہماری تفصیلی بچوں کے تحفظ کی پالیسی کے لیے <a href="#childsafety" onclick="showPage('childsafety'); return false;">بچوں کا تحفظ کا صفحہ</a> دیکھیں۔</p>
+        </section>
+
+        <section class="card" id="account-deletion-ur">
+          <h2>6. آپ کے حقوق اور اکاؤنٹ حذف کرنا</h2>
+          <ol>
+            <li><strong>ایپ کے اندر فوری حذف کریں:</strong> ایپ کھولیں ← سائن ان کریں ← <strong>پروفائل</strong> میں جائیں ← <strong>اکاؤنٹ حذف کریں</strong> پر کلک کریں۔ اس سے آپ کا اکاؤنٹ، ڈونر درخواست اور ڈائریکٹری پروفائل مستقل طور پر حذف ہو جائیں گے۔</li>
+            <li><strong>ای میل کے ذریعے درخواست:</strong> اگر آپ ایپ تک رسائی حاصل نہیں کر سکتے تو اپنے رجسٹرڈ ای میل سے <a href="mailto:mudassirkhan9991@gmail.com?subject=Delete%20My%20Account%20-%20Nakband%20Welfare%20Foundation">mudassirkhan9991@gmail.com</a> پر <em>"Delete My Account"</em> کے عنوان سے ای میل کریں۔ آپ کا ڈیٹا 7 کاروباری دنوں میں مستقل حذف کر دیا جائے گا۔</li>
+          </ol>
+          <p style="margin-top: 10px;">تفصیلی طریقہ کار کے لیے ہمارا مخصوص <a href="#deletion" onclick="showPage('deletion'); return false;">اکاؤنٹ ڈیلیشن صفحہ</a> دیکھیں۔</p>
+        </section>
+
+        <section class="card">
+          <h2>7. رابطہ کریں</h2>
+          <p>
+            <strong>نیک بند ویلفیئر فاؤنڈیشن</strong><br />
+            نیک بند، سینی گمبٹ، کوہاٹ، پاکستان<br />
+            ای میل: <a href="mailto:mudassirkhan9991@gmail.com">mudassirkhan9991@gmail.com</a>
+          </p>
+        </section>
+      </article>
+    </div>
+
+    <!-- PAGE 2: ACCOUNT DELETION -->
+    <div id="page-deletion" class="hidden">
+      <!-- DELETION - ENGLISH -->
+      <article id="deletion-en">
+        <section class="hero danger">
+          <h1>Account &amp; Data Deletion</h1>
+          <p>Instructions for permanently deleting your Nakband Welfare Foundation account and associated personal data in compliance with Google Play Data Safety policies.</p>
+          <div class="meta-row">
+            <span class="meta-pill"><strong>App:</strong> Nakband Welfare Foundation</span>
+            <span class="meta-pill"><strong>Package:</strong> com.nakband.welfare</span>
+            <span class="meta-pill"><strong>Processing Time:</strong> Instant (In-App) or up to 7 days (Email)</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Overview of Account Deletion</h2>
+          <p>At <strong>Nakband Welfare Foundation</strong>, we respect your right to control your personal data. You have the right to request the complete and permanent deletion of your account, blood donor records, and any personal information linked to your profile at any time.</p>
+        </section>
+
+        <section class="card">
+          <h2>Option 1: In-App Deletion (Immediate)</h2>
+          <p>You can delete your account directly inside the Android application without contacting support:</p>
+          <div class="step-box">
+            <h3>Step 1: Sign In</h3>
+            <p>Open the <strong>Nakband Welfare Foundation</strong> app on your device and sign in with your Google account.</p>
+          </div>
+          <div class="step-box">
+            <h3>Step 2: Go to Profile</h3>
+            <p>Tap on the <strong>Profile</strong> tab or user avatar located in the navigation bar/menu.</p>
+          </div>
+          <div class="step-box">
+            <h3>Step 3: Tap "Delete Account"</h3>
+            <p>Scroll down to the account actions section and select <strong>Delete Account</strong> (marked in red).</p>
+          </div>
+          <div class="step-box">
+            <h3>Step 4: Confirm Deletion</h3>
+            <p>A confirmation dialog will appear warning that this action is irreversible. Confirm your choice to finalize the deletion.</p>
+          </div>
+          <p><strong>Result:</strong> Your account, authentication credentials, and public blood donor records will be deleted immediately from our active databases.</p>
+        </section>
+
+        <section class="card">
+          <h2>Option 2: Email Request (Web / Manual Deletion)</h2>
+          <p>If you have uninstalled the app or cannot sign in, you can submit a manual deletion request via email:</p>
+          <ol>
+            <li>Send an email to: <a href="mailto:mudassirkhan9991@gmail.com?subject=Delete%20My%20Account%20-%20Nakband%20Welfare%20Foundation"><strong>mudassirkhan9991@gmail.com</strong></a></li>
+            <li>Subject line: <code>Delete My Account - Nakband Welfare Foundation</code></li>
+            <li>Include in your message:
+              <ul>
+                <li>Your registered Google email address</li>
+                <li>Your full name (as displayed in the app)</li>
+                <li>Your contact phone number (if you were registered as a blood donor)</li>
+              </ul>
+            </li>
+          </ol>
+          <a class="btn-mail" href="mailto:mudassirkhan9991@gmail.com?subject=Delete%20My%20Account%20-%20Nakband%20Welfare%20Foundation&amp;body=Hello%2C%0A%0APlease%20permanently%20delete%20my%20account%20and%20all%20associated%20data%20from%20the%20Nakband%20Welfare%20Foundation%20app.%0A%0ARegistered%20Email%3A%20%0ARegistered%20Name%3A%20%0ARegistered%20Phone%20(if%20applicable)%3A%20%0A%0AThank%20you.">Send Deletion Request Email</a>
+          <p style="margin-top: 14px;"><strong>Processing Time:</strong> Manual email requests are processed and verified within <strong>7 business days</strong>. You will receive a confirmation email once your account and data are permanently removed.</p>
+        </section>
+
+        <section class="card">
+          <h2>What Data is Deleted?</h2>
+          <p>When your account deletion request is completed, the following data is permanently purged:</p>
+          <ul>
+            <li><strong>Firebase Authentication Record:</strong> Your Google Sign-In UID, email, and authentication credentials.</li>
+            <li><strong>User Profile:</strong> Your full name, email, display profile, and user role.</li>
+            <li><strong>Blood Donor Profile:</strong> Public directory listing, blood group, village, district, address, phone number, and WhatsApp link.</li>
+            <li><strong>Pending Applications:</strong> Any pending donor or volunteer requests.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Data Retention Policy</h2>
+          <p>We do not keep unnecessary personal data after deletion. However, please note:</p>
+          <ul>
+            <li><strong>Charitable Distribution Logs:</strong> Anonymous aggregate distribution statistics or physical paper ledger records maintained by foundation staff for charitable financial audits cannot be modified via digital app deletion.</li>
+            <li><strong>Backups:</strong> Secure database backup snapshots are automatically overwritten and purged according to cloud retention lifecycles (typically within 30 days).</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Contact Us for Assistance</h2>
+          <p>For any questions or inquiries regarding account deletion or privacy:</p>
+          <p>
+            <strong>Nakband Welfare Foundation</strong><br />
+            Nakband, Seni Gumbat, Kohat, Pakistan<br />
+            Email: <a href="mailto:mudassirkhan9991@gmail.com">mudassirkhan9991@gmail.com</a>
+          </p>
+        </section>
+      </article>
+
+      <!-- DELETION - URDU -->
+      <article id="deletion-ur" class="hidden">
+        <section class="hero danger">
+          <h1>اکاؤنٹ اور ڈیٹا حذف کرنا</h1>
+          <p>گوگل پلے ڈیٹا سیفٹی پالیسی کے مطابق نیک بند ویلفیئر فاؤنڈیشن ایپ سے اپنا اکاؤنٹ اور ذاتی معلومات مستقل طور پر حذف کرنے کا طریقہ کار۔</p>
+          <div class="meta-row">
+            <span class="meta-pill"><strong>ایپ:</strong> نیک بند ویلفیئر فاؤنڈیشن</span>
+            <span class="meta-pill"><strong>پروسیسنگ کا وقت:</strong> ایپ میں فوری یا ای میل کے ذریعے 7 دن کے اندر</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>اکاؤنٹ ڈیلیشن کا تعارف</h2>
+          <p><strong>نیک بند ویلفیئر فاؤنڈیشن</strong> آپ کی پرائیویسی کا احترام کرتی ہے۔ آپ کسی بھی وقت اپنا اکاؤنٹ، بلڈ ڈونر ریکارڈ اور ذاتی ڈیٹا مستقل طور پر ختم کرنے کی درخواست کر سکتے ہیں۔</p>
+        </section>
+
+        <section class="card">
+          <h2>طریقہ نمبر 1: ایپ کے اندر فوری حذف کریں</h2>
+          <p>آپ ایپ کے اندر سے براہ راست اپنا اکاؤنٹ بغیر کسی تاخیر کے ڈیلیٹ کر سکتے ہیں:</p>
+          <div class="step-box">
+            <h3>مرحلہ 1: سائن ان کریں</h3>
+            <p>اپنے موبائل میں <strong>نیک بند ویلفیئر فاؤنڈیشن</strong> ایپ کھولیں اور لاگ ان کریں۔</p>
+          </div>
+          <div class="step-box">
+            <h3>مرحلہ 2: پروفائل کھولیں</h3>
+            <p>ایپ میں <strong>پروفائل (Profile)</strong> سیکشن پر ٹیپ کریں۔</p>
+          </div>
+          <div class="step-box">
+            <h3>مرحلہ 3: "Delete Account" منتخب کریں</h3>
+            <p>نیچے اسکرول کریں اور سرخ رنگ کے <strong>اکاؤنٹ حذف کریں (Delete Account)</strong> بٹن پر کلک کریں۔</p>
+          </div>
+          <div class="step-box">
+            <h3>مرحلہ 4: تصدیق کریں</h3>
+            <p>تصدیقی پیغام پڑھ کر کنفرم کریں تاکہ اکاؤنٹ فوری ڈیلیٹ ہو جائے۔</p>
+          </div>
+          <p><strong>نتیجہ:</strong> آپ کا اکاؤنٹ اور پبلک بلڈ ڈونر ریکارڈ فوری طور پر سسٹم سے صاف کر دیا جائے گا۔</p>
+        </section>
+
+        <section class="card">
+          <h2>طریقہ نمبر 2: ای میل کے ذریعے درخواست</h2>
+          <p>اگر آپ کے پاس ایپ موجود نہیں ہے یا سائن ان نہیں ہو پا رہا، تو آپ ای میل کے ذریعے اکاؤنٹ ختم کروا سکتے ہیں:</p>
+          <ol>
+            <li>اس ای میل پر رابطہ کریں: <a href="mailto:mudassirkhan9991@gmail.com?subject=Delete%20My%20Account%20-%20Nakband%20Welfare%20Foundation"><strong>mudassirkhan9991@gmail.com</strong></a></li>
+            <li>عنوان (Subject): <code>Delete My Account - Nakband Welfare Foundation</code></li>
+            <li>پیغام میں درج کریں:
+              <ul>
+                <li>آپ کا رجسٹرڈ گوگل ای میل ایڈریس</li>
+                <li>آپ کا پورا نام</li>
+                <li>آپ کا فون نمبر (اگر بطور بلڈ ڈونر رجسٹرڈ ہیں)</li>
+              </ul>
+            </li>
+          </ol>
+          <a class="btn-mail" href="mailto:mudassirkhan9991@gmail.com?subject=Delete%20My%20Account%20-%20Nakband%20Welfare%20Foundation&amp;body=Hello%2C%0A%0APlease%20permanently%20delete%20my%20account%20and%20all%20associated%20data%20from%20the%20Nakband%20Welfare%20Foundation%20app.%0A%0ARegistered%20Email%3A%20%0ARegistered%20Name%3A%20%0ARegistered%20Phone%20(if%20applicable)%3A%20%0A%0AThank%20you.">ای میل درخواست بھیجیں</a>
+          <p style="margin-top: 14px;"><strong>پروسیسنگ کا وقت:</strong> ای میل درخواستوں پر <strong>7 کاروباری دنوں</strong> کے اندر عملدرآمد مکمل کر دیا جائے گا۔</p>
+        </section>
+
+        <section class="card">
+          <h2>کون سا ڈیٹا حذف ہوتا ہے؟</h2>
+          <ul>
+            <li><strong>فائر بیس لاگ ان اکاؤنٹ:</strong> آپ کا گوگل سائن ان، ای میل اور تصدیقی آئی ڈی۔</li>
+            <li><strong>پروفائل تفصیلات:</strong> آپ کا نام اور پروفائل معلومات۔</li>
+            <li><strong>بلڈ ڈونر معلومات:</strong> ڈائریکٹری لسٹنگ، بلڈ گروپ، پتہ، فون نمبر اور واٹس ایپ لنک۔</li>
+            <li><strong>زیر التواء درخواستیں:</strong> ڈونر یا رضاکار کی درخواستیں۔</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>رابطہ</h2>
+          <p>
+            <strong>نیک بند ویلفیئر فاؤنڈیشن</strong><br />
+            نیک بند، سینی گمبٹ، کوہاٹ، پاکستان<br />
+            ای میل: <a href="mailto:mudassirkhan9991@gmail.com">mudassirkhan9991@gmail.com</a>
+          </p>
+        </section>
+      </article>
+    </div>
+
+    <!-- PAGE 3: CHILD SAFETY STANDARDS -->
+    <div id="page-childsafety" class="hidden">
+      <!-- CHILD SAFETY - ENGLISH -->
+      <article id="childsafety-en">
+        <section class="hero safe">
+          <h1>Child Safety Standards &amp; Protection Policy</h1>
+          <p>Nakband Welfare Foundation is firmly dedicated to child safety and strictly enforces Google Play's Families &amp; Child Safety Policies, COPPA guidelines, and a zero-tolerance policy against Child Sexual Abuse Material (CSAM) and child exploitation.</p>
+          <div class="meta-row">
+            <span class="meta-pill"><strong>App:</strong> Nakband Welfare Foundation</span>
+            <span class="meta-pill"><strong>Package:</strong> com.nakband.welfare</span>
+            <span class="meta-pill"><strong>Compliance:</strong> Google Play Families &amp; Child Safety Policy / COPPA</span>
+          </div>
+        </section>
+
+        <section class="card notice-safe">
+          <h2>1. Zero-Tolerance Statement on Child Exploitation &amp; Abuse (CSAE / CSAM)</h2>
+          <p>Nakband Welfare Foundation maintains a strict, absolute <strong>zero-tolerance policy</strong> regarding Child Sexual Abuse Material (CSAM), Child Sexual Exploitation and Abuse (CSAE), child grooming, harassment, or endangerment of any minor.</p>
+          <p>Any account found or suspected of engaging in, transmitting, requesting, or promoting child exploitation content or abuse will be <strong>immediately terminated</strong>, permanently banned from our platform, and promptly reported to relevant law enforcement agencies and international child safety organizations (including NCMEC - National Center for Missing &amp; Exploited Children).</p>
+        </section>
+
+        <section class="card">
+          <h2>2. Target Audience &amp; Age Eligibility</h2>
+          <p>The Nakband Welfare Foundation mobile application is a voluntary community welfare coordination tool and adult blood donor directory:</p>
+          <ul>
+            <li><strong>Not Directed at Children:</strong> The app is strictly designed for and targeted at an adult audience (ages 18 and older). It is not designed to appeal to, entertain, or target children under 13.</li>
+            <li><strong>Adult Blood Donors Only:</strong> Voluntary blood donor registration and public donor directory listings are restricted strictly to healthy individuals who are at least 18 years old in accordance with clinical blood donation guidelines and Pakistani health regulations.</li>
+            <li><strong>Children Under 13:</strong> We do not knowingly solicit, collect, or store personal information directly from children under 13 years of age.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>3. Protection of Child Welfare Beneficiary Records</h2>
+          <p>In community welfare aid and seasonal charitable clothing drives, authorized foundation staff record family welfare records (which may include sizing measurements for children receiving charitable clothing assistance):</p>
+          <ul>
+            <li><strong>Strict Staff-Only Access:</strong> Beneficiary details are accessible solely by vetted, authorized foundation administrators and village tailors with authenticated role-based security rules in Google Firebase.</li>
+            <li><strong>Never Public:</strong> Beneficiary details and measurements of minors are <strong>never</strong> published in public directories, never indexed, and never made searchable or accessible to other app users or third parties.</li>
+            <li><strong>No Ads or Monetization:</strong> No data collected for charitable aid is ever shared with advertisers, brokers, or marketing networks.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>4. Parental and Guardian Rights (COPPA Compliance)</h2>
+          <p>We fully support the rights of parents and legal guardians under the Children's Online Privacy Protection Act (COPPA) and international child privacy standards:</p>
+          <ul>
+            <li><strong>Review &amp; Access:</strong> A parent or guardian can request to review any personal information about their child that may have been submitted in error or during charitable aid surveys.</li>
+            <li><strong>Immediate Removal:</strong> A parent or guardian may demand the immediate and permanent deletion of their child's records from our databases.</li>
+            <li><strong>Revocation of Consent:</strong> Parents can refuse further collection or use of information relating to their minor dependents.</li>
+          </ul>
+        </section>
+
+        <section class="card notice">
+          <h2>5. Dedicated Child Safety Incident Reporting</h2>
+          <p>If you discover, suspect, or wish to report any content, behavior, or account that potentially involves child endangerment, inappropriate interaction with minors, or unauthorized submission of minor data, please contact our child safety team immediately:</p>
+          <div class="step-box">
+            <h3>Child Safety &amp; Abuse Reporting Point of Contact</h3>
+            <p><strong>Designated Officer:</strong> Nakband Welfare Child Safety Team</p>
+            <p><strong>Email:</strong> <a href="mailto:mudassirkhan9991@gmail.com?subject=URGENT%20-%20Child%20Safety%20%2F%20Abuse%20Report">mudassirkhan9991@gmail.com</a></p>
+            <p><strong>Subject:</strong> <code>URGENT - Child Safety / Abuse Report</code></p>
+            <p><strong>Response Time:</strong> Reports involving minor safety are treated with the highest priority and investigated within <strong>24 hours</strong>.</p>
+          </div>
+          <a class="btn-mail btn-report" href="mailto:mudassirkhan9991@gmail.com?subject=URGENT%20-%20Child%20Safety%20%2F%20Abuse%20Report&amp;body=URGENT%20REPORT%20FOR%20CHILD%20SAFETY%20TEAM%3A%0A%0ADescription%20of%20incident%20or%20concern%3A%0AAccount%20or%20user%20details%20involved%3A%0AYour%20contact%20information%3A">File Urgent Child Safety Report</a>
+        </section>
+
+        <section class="card">
+          <h2>6. Continuous Enforcement &amp; Regular Audits</h2>
+          <p>We routinely review our database security rules, verify adult donor eligibility, and monitor for any unintended data collection. We remain compliant with all evolving Google Play Developer Policy Center Families regulations and applicable statutory laws.</p>
+        </section>
+      </article>
+
+      <!-- CHILD SAFETY - URDU -->
+      <article id="childsafety-ur" class="hidden">
+        <section class="hero safe">
+          <h1>بچوں کے تحفظ کی پالیسی اور معیارات</h1>
+          <p>نیک بند ویلفیئر فاؤنڈیشن بچوں کے مکمل تحفظ کے لیے پرعزم ہے اور گوگل پلے سٹور کی چائلڈ سیفٹی پالیسی، بچوں کے جنسی استحصال کے خلاف زیرو ٹالرینس (CSAM/CSAE) اور کاپا (COPPA) کے تمام معیارات پر سختی سے عمل کرتی ہے۔</p>
+          <div class="meta-row">
+            <span class="meta-pill"><strong>ایپ:</strong> نیک بند ویلفیئر فاؤنڈیشن</span>
+            <span class="meta-pill"><strong>پالیسی:</strong> گوگل پلے چائلڈ سیفٹی و تحفظِ اطفال</span>
+          </div>
+        </section>
+
+        <section class="card notice-safe">
+          <h2>1. بچوں کے استحصال کے خلاف زیرو ٹالرینس پالیسی</h2>
+          <p>نیک بند ویلفیئر فاؤنڈیشن بچوں کے خلاف کسی بھی قسم کے استحصال، جنسی مواد (CSAM) یا ہراسانی پر <strong>مکمل زیرو ٹالرینس (Zero Tolerance)</strong> پالیسی رکھتی ہے۔</p>
+          <p>اگر کوئی بھی صارف بچوں کے ساتھ نامناسب رویہ یا کسی قسم کے غیراخلاقی مواد میں ملوث پایا گیا تو اس کا اکاؤنٹ <strong>فوری طور پر مستقل بلاک</strong> کیا جائے گا اور اس کی فوری اطلاع قانون نافذ کرنے والے اداروں اور چائلڈ پروٹیکشن اداروں کو دی جائے گی۔</p>
+        </section>
+
+        <section class="card">
+          <h2>2. ایپ کا بنیادی مقصد اور عمر کی حد</h2>
+          <p>یہ ایپلیکیشن بنیادی طور پر فلاحی تعاون اور خون کے عطیات کے لیے بنائی گئی ہے:</p>
+          <ul>
+            <li><strong>بچوں کے لیے نہیں:</strong> یہ ایپ بنیادی طور پر 18 سال یا اس سے زائد عمر کے بالغ افراد کے لیے ہے۔ یہ 13 سال سے کم عمر بچوں کو متوجہ کرنے کے لیے نہیں بنائی گئی۔</li>
+            <li><strong>خون کے عطیات:</strong> صرف 18 سال یا اس سے بڑی عمر کے افراد ہی طبی و ملکی قوانین کے مطابق رضاکارانہ بلڈ ڈونر بن سکتے ہیں۔</li>
+            <li><strong>13 سال سے کم عمر افراد کا ڈیٹا:</strong> ہم جان بوجھ کر 13 سال سے کم عمر بچوں سے کوئی ڈیٹا یا اکاؤنٹ نہیں لیتے۔</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>3. فلاحی امداد کے مستحق بچوں کا تحفظ</h2>
+          <p>فلاحی امداد اور مفت کپڑوں کی سلائی کے دوران مجاز عملہ مستحق خاندانوں کے بچوں کے ناپ درج کرتا ہے:</p>
+          <ul>
+            <li><strong>صرف مجاز عملے کی رسائی:</strong> یہ ریکارڈز انتہائی محفوظ فائر بیس ڈیٹا بیس میں رہتے ہیں اور صرف فاؤنڈیشن کے مجاز منتظمین اور درزی ہی دیکھ سکتے ہیں۔</li>
+            <li><strong>عوامی نمائش پر پابندی:</strong> بچوں کی پیمائش اور تفصیلات کبھی بھی پبلک ڈائریکٹری میں ظاہر نہیں کی جاتیں اور نہ ہی دیگر صارفین انہیں دیکھ سکتے ہیں۔</li>
+            <li><strong>کوئی اشتہارات نہیں:</strong> فلاحی ڈیٹا کسی تیسرے فریق یا اشتہاری کمپنی کو فراہم نہیں کیا جاتا۔</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>4. والدین اور سرپرستوں کے قانونی حقوق</h2>
+          <p>والدین اور سرپرستوں کو اپنے بچوں کے ڈیٹا پر مکمل کنٹرول حاصل ہے:</p>
+          <ul>
+            <li>اگر کسی بچے کی معلومات غلطی سے درج ہو گئی ہوں تو والدین کسی بھی وقت اسے چیک کرنے کی درخواست کر سکتے ہیں۔</li>
+            <li>والدین فوری طور پر بچے کا ریکارڈ ڈیٹا بیس سے <strong>مستقل حذف</strong> کروانے کا پورا حق رکھتے ہیں۔</li>
+          </ul>
+        </section>
+
+        <section class="card notice">
+          <h2>5. بچوں کے تحفظ کے لیے فوری رپورٹنگ</h2>
+          <p>اگر آپ کو ایپ میں کسی بچے کے حقوق کی خلاف ورزی یا کسی مشتبہ عمل کا شبہ ہو تو فوری طور پر ہماری چائلڈ سیفٹی ٹیم کو مطلع کریں:</p>
+          <div class="step-box">
+            <h3>چائلڈ سیفٹی سپورٹ رابطہ</h3>
+            <p><strong>ای میل:</strong> <a href="mailto:mudassirkhan9991@gmail.com?subject=URGENT%20-%20Child%20Safety%20%2F%20Abuse%20Report">mudassirkhan9991@gmail.com</a></p>
+            <p><strong>عنوان:</strong> <code>URGENT - Child Safety / Abuse Report</code></p>
+            <p><strong>کارروائی کا وقت:</strong> بچوں کے تحفظ کی شکایات پر <strong>24 گھنٹوں</strong> کے اندر فوری کارروائی کی جاتی ہے۔</p>
+          </div>
+          <a class="btn-mail btn-report" href="mailto:mudassirkhan9991@gmail.com?subject=URGENT%20-%20Child%20Safety%20%2F%20Abuse%20Report&amp;body=URGENT%20REPORT%20FOR%20CHILD%20SAFETY%20TEAM%3A%0A%0AIncident%20Details%3A%0AContact%3A">فوری چائلڈ سیفٹی رپورٹ درج کریں</a>
+        </section>
+
+        <section class="card">
+          <h2>6. فاؤنڈیشن کا رابطہ</h2>
+          <p>
+            <strong>نیک بند ویلفیئر فاؤنڈیشن</strong><br />
+            نیک بند، سینی گمبٹ، کوہاٹ، پاکستان<br />
+            ای میل: <a href="mailto:mudassirkhan9991@gmail.com">mudassirkhan9991@gmail.com</a>
+          </p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#privacy" onclick="showPage('privacy'); return false;" data-en="Privacy Policy" data-ur="پرائیویسی پالیسی">Privacy Policy</a>
+      <span>•</span>
+      <a href="#deletion" onclick="showPage('deletion'); return false;" data-en="Account Deletion" data-ur="اکاؤنٹ حذف کریں">Account Deletion</a>
+      <span>•</span>
+      <a href="#childsafety" onclick="showPage('childsafety'); return false;" data-en="Child Safety" data-ur="بچوں کا تحفظ">Child Safety</a>
+    </div>
+    <span data-en="© 2026 Nakband Welfare Foundation. All rights reserved." data-ur="© 2026 نیک بند ویلفیئر فاؤنڈیشن۔ جملہ حقوق محفوظ ہیں۔">© 2026 Nakband Welfare Foundation. All rights reserved.</span>
+  </footer>
+
+  <script>
+    let currentLang = 'en';
+    let currentPage = 'privacy';
+
+    function showPage(pageId) {
+      if (pageId === 'deletion' || pageId === 'account-deletion') {
+        currentPage = 'deletion';
+      } else if (pageId === 'childsafety' || pageId === 'child-safety') {
+        currentPage = 'childsafety';
+      } else {
+        currentPage = 'privacy';
+      }
+
+      // Hide all page containers
+      document.getElementById('page-privacy').classList.toggle('hidden', currentPage !== 'privacy');
+      document.getElementById('page-deletion').classList.toggle('hidden', currentPage !== 'deletion');
+      document.getElementById('page-childsafety').classList.toggle('hidden', currentPage !== 'childsafety');
+
+      // Update tab active states
+      document.getElementById('tab-privacy').classList.toggle('active', currentPage === 'privacy');
+      document.getElementById('tab-deletion').classList.toggle('active', currentPage === 'deletion');
+      document.getElementById('tab-childsafety').classList.toggle('active', currentPage === 'childsafety');
+
+      // Update document title
+      const titleEl = document.getElementById('page-title');
+      if (currentPage === 'privacy') {
+        titleEl.textContent = currentLang === 'ur'
+          ? 'پرائیویسی پالیسی — نیک بند ویلفیئر فاؤنڈیشن'
+          : 'Privacy Policy — Nakband Welfare Foundation';
+      } else if (currentPage === 'deletion') {
+        titleEl.textContent = currentLang === 'ur'
+          ? 'اکاؤنٹ اور ڈیٹا حذف کرنا — نیک بند ویلفیئر فاؤنڈیشن'
+          : 'Account Deletion — Nakband Welfare Foundation';
+      } else if (currentPage === 'childsafety') {
+        titleEl.textContent = currentLang === 'ur'
+          ? 'بچوں کے تحفظ کی پالیسی — نیک بند ویلفیئر فاؤنڈیشن'
+          : 'Child Safety Standards — Nakband Welfare Foundation';
+      }
+
+      // Update URL hash without jumping
+      if (window.location.hash !== '#' + currentPage) {
+        history.replaceState(null, '', '#' + currentPage);
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function setLanguage(lang) {
+      currentLang = lang === 'ur' ? 'ur' : 'en';
+      const isUrdu = currentLang === 'ur';
+
+      document.documentElement.lang = isUrdu ? 'ur' : 'en';
+      document.body.dir = isUrdu ? 'rtl' : 'ltr';
+
+      // Toggle English/Urdu sections for privacy
+      document.getElementById('privacy-en').classList.toggle('hidden', isUrdu);
+      document.getElementById('privacy-ur').classList.toggle('hidden', !isUrdu);
+
+      // Toggle English/Urdu sections for deletion
+      document.getElementById('deletion-en').classList.toggle('hidden', isUrdu);
+      document.getElementById('deletion-ur').classList.toggle('hidden', !isUrdu);
+
+      // Toggle English/Urdu sections for child safety
+      document.getElementById('childsafety-en').classList.toggle('hidden', isUrdu);
+      document.getElementById('childsafety-ur').classList.toggle('hidden', !isUrdu);
+
+      // Language buttons
+      document.getElementById('btn-en').classList.toggle('active', !isUrdu);
+      document.getElementById('btn-ur').classList.toggle('active', isUrdu);
+
+      // Update data-en/data-ur labels across the page
+      document.querySelectorAll('[data-en][data-ur]').forEach(function (el) {
+        el.textContent = isUrdu ? el.getAttribute('data-ur') : el.getAttribute('data-en');
+      });
+
+      // Update page title
+      showPage(currentPage);
+    }
+
+    function parseInitialHash() {
+      const hash = window.location.hash.replace('#', '').toLowerCase();
+      if (hash === 'deletion' || hash === 'account-deletion') {
+        showPage('deletion');
+      } else if (hash === 'childsafety' || hash === 'child-safety' || hash === 'children') {
+        showPage('childsafety');
+      } else {
+        showPage('privacy');
+      }
+    }
+
+    // Initialize from URL hash if provided
+    window.addEventListener('DOMContentLoaded', parseInitialHash);
+    window.addEventListener('hashchange', parseInitialHash);
+  </script>
+</body>
+</html>
